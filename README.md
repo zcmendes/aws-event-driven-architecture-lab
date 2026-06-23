@@ -53,6 +53,21 @@ The application simulates a pizza ordering workflow where events are processed a
 | receive_events | Sends EventBridge events back to connected clients |
 
 
+## End-to-End Test
+
+The application successfully processed the order through the event-driven workflow.
+
+Request:
+make_pizza
+
+Events received:
+- make_pizza
+- cook_pizza
+- deliver_pizza
+
+![Final Test](screenshots/final-test.png)
+
+
 ## Skills Demonstrated
 
 - Event-Driven Architecture
