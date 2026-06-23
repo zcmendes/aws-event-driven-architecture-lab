@@ -53,6 +53,13 @@ The application simulates a pizza ordering workflow where events are processed a
 | receive_events | Sends EventBridge events back to connected clients |
 
 
+## WebSocket API
+
+Amazon API Gateway WebSocket API enables real-time event notifications. The `$connect` route is integrated with a Lambda function that manages client connections, allowing processed events to be pushed back to connected users.
+
+![WebSocket API](screenshots/websocket-api.png)
+
+
 ## End-to-End Test
 
 The application successfully processed the order through the event-driven workflow.
