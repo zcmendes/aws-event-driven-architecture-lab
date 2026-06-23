@@ -6,6 +6,7 @@
 ![Architecture](architecture/architecture-diagram.png)
 
 
+
 ## Overview
 
 This project demonstrates an event-driven serverless architecture built on AWS using:
@@ -17,6 +18,18 @@ This project demonstrates an event-driven serverless architecture built on AWS u
 - Amazon DynamoDB
 
 The application simulates a pizza ordering workflow where events are processed asynchronously through multiple Lambda functions.
+
+
+## API Gateway HTTP API
+
+The application uses an Amazon API Gateway HTTP API as the entry point for incoming requests.
+
+A `POST /` route is configured with a direct integration to Amazon EventBridge using the `PutEvents` action. When a client submits an order, the request payload is forwarded to the custom event bus (`lab_event_bus`), where EventBridge routes events to the appropriate Lambda functions for processing.
+
+This approach enables a loosely coupled, event-driven architecture that improves scalability and maintainability.
+
+![API Gateway HTTP API](screenshots/api-gateway-http-api.png)
+
 
 
 ## Event Flow
