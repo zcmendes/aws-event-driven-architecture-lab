@@ -31,6 +31,22 @@ This approach enables a loosely coupled, event-driven architecture that improves
 ![API Gateway HTTP API](screenshots/api-gateway-http-api.png)
 
 
+## Amazon EventBridge Rules
+
+Amazon EventBridge serves as the central event router for the application.
+
+A custom event bus (`lab_event_bus`) receives events from the API Gateway HTTP API and routes them to the appropriate Lambda functions through four event rules:
+
+* `lab_make_pizza_rule`
+* `lab_cook_pizza_rule`
+* `lab_deliver_pizza_rule`
+* `lab_receive_events_rule`
+
+This event-driven approach decouples application components and enables scalable, asynchronous processing of pizza orders.
+
+![EventBridge Rules](screenshots/eventbridge-rules.png)
+
+
 
 ## Event Flow
 
