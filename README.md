@@ -169,9 +169,8 @@ This project demonstrates how AWS serverless services can be combined to build s
 
 ## Author
 
-**Ze Mendes**
-
-Information Security Analyst with experience in Cloud Infrastructure, Cybersecurity, Governance and Automation.
+**Ze Mendes**  
+Information Security Analyst | Cloud | Cybersecurity | Automation
 
 - GitHub: https://github.com/zcmendes
 - LinkedIn: https://www.linkedin.com/in/zcmendes
