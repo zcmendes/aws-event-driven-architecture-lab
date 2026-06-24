@@ -133,14 +133,18 @@ Amazon API Gateway WebSocket API enables real-time event notifications. The `$co
 }
 ```
 
-### Processing Flow
+### Event Processing Workflow
 
 ```text
+Client Request
+      ↓
 make_pizza
-    ↓
+      ↓
 cook_pizza
-    ↓
+      ↓
 deliver_pizza
+      ↓
+WebSocket Notification
 ```
 
 ![Final Test](screenshots/final-test.png)
