@@ -59,6 +59,17 @@ The application simulates a pizza ordering workflow where events are processed a
 - IAM
 
 
+## Project Components
+
+| Component | Purpose |
+|------------|------------|
+| API Gateway HTTP API | Receives pizza order requests |
+| Amazon EventBridge | Routes events between services |
+| AWS Lambda | Processes pizza workflow events |
+| DynamoDB | Stores WebSocket connection IDs |
+| API Gateway WebSocket API | Delivers real-time notifications |
+
+
 ## API Gateway HTTP API
 
 The application uses an Amazon API Gateway HTTP API as the entry point for incoming requests.
