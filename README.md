@@ -102,22 +102,28 @@ Amazon API Gateway WebSocket API enables real-time event notifications. The `$co
 
 ## End-to-End Test
 
-The application successfully processed the order through the event-driven workflow.
+### Request Payload
 
+```json
 {
   "item": {
     "order_id": "1AB",
     "eventtype": "make_pizza"
   }
 }
+```
 
-Events received:
-- make_pizza
-- cook_pizza
-- deliver_pizza
+### Processing Flow
+
+```text
+make_pizza
+    ↓
+cook_pizza
+    ↓
+deliver_pizza
+```
 
 ![Final Test](screenshots/final-test.png)
-
 
 ## Skills Demonstrated
 
