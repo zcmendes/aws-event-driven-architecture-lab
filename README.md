@@ -119,7 +119,7 @@ This event-driven approach decouples application components and enables scalable
 
 ## Lambda Functions
 
-The application uses five AWS Lambda functions to implement the event-driven workflow and WebSocket communication.
+The application relies on five AWS Lambda functions to process events and manage WebSocket communication throughout the pizza ordering workflow.
 
 | Function          | Purpose                                            |
 | ----------------- | -------------------------------------------------- |
