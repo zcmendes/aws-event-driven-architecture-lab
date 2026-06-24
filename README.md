@@ -30,7 +30,20 @@ The application simulates a pizza ordering workflow where events are processed a
 
 
 
+## Repository Structure
 
+```text
+.
+├── architecture/
+├── screenshots/
+├── lambda/
+│   ├── make_pizza/
+│   ├── cook_pizza/
+│   ├── deliver_pizza/
+│   ├── websocket_connect/
+│   └── receive_events/
+└── README.md
+```
 
 
 
@@ -47,6 +60,16 @@ The application simulates a pizza ordering workflow where events are processed a
    - deliver_pizza
 5. Events are sent back to connected clients through a WebSocket API.
 6. DynamoDB stores active WebSocket connection IDs.
+
+
+## Key Features
+
+- Event-driven architecture
+- Real-time notifications with WebSocket API
+- Serverless event processing
+- Amazon EventBridge custom event bus
+- Decoupled application components
+- DynamoDB connection management
 
 
 ## AWS Services Used
