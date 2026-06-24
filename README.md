@@ -1,6 +1,15 @@
 # AWS Event-Driven Architecture Lab
 
 
+# AWS Event-Driven Architecture Lab
+
+![AWS](https://img.shields.io/badge/AWS-Serverless-orange)
+![EventBridge](https://img.shields.io/badge/Amazon-EventBridge-blue)
+![API Gateway](https://img.shields.io/badge/API-Gateway-green)
+![Lambda](https://img.shields.io/badge/AWS-Lambda-yellow)
+![DynamoDB](https://img.shields.io/badge/Amazon-DynamoDB-blue)
+
+
 ## Architecture
 
 ![Architecture](architecture/architecture-diagram.png)
