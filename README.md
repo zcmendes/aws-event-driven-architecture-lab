@@ -149,6 +149,12 @@ WebSocket Notification
 
 ![Final Test](screenshots/final-test.png)
 
+
+## Conclusion
+
+This project demonstrates how AWS serverless services can be combined to build scalable, loosely coupled, event-driven applications using Amazon API Gateway, Amazon EventBridge, AWS Lambda, DynamoDB, and WebSocket APIs.
+
+
 ## Skills Demonstrated
 
 - Event-Driven Architecture
